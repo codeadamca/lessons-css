@@ -1,43 +1,41 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-* {
-    /* font-family: Arial, Helvetica, sans-serif; */
+h1 {
+    color: #fff;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+h1 span {
+    color: #f00;
+}
+#home-page h1 {
+    font-size: 400%;
+    color: green;
+}
+#about-me h1 {
+    color: blue;
+}
+#contact-me h1 {
+    color: purple;
+}
+
+body {
     font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, h1 span {
-    /* font-family: Georgia, 'Times New Roman', Times, serif; */
-    
-}
-
-main {
-    max-width: 800px;
-    margin: auto;
-}
-
-h1#name {
-    /* font-family: 'Courier New', Courier, monospace; */
-    font-family: 'Comforter Brush', cursive;
-    background-color: #000;
+a:link {
     color: red;
-    text-align: center;
-    padding: 10px;
 }
-h1#name span {
+a:visited {
     color: orange;
-    /* font-family: 'Courier New', Courier, monospace; */
-    font-family: 'Comforter Brush', cursive;
 }
-
-footer {
-    border-top: 1px solid black;
-    font-size: 70%;
-    text-align: center;
-    padding: 10px;
+a:hover {
+    color: blue;
 }
-
-.stars {
-    color: orange;
+a:active {
+    color: green;
 }
