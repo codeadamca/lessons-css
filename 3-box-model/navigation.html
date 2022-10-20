@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sample Navigation</title>
+
+    <style>
+
+        #ex1,
+        #ex1 li {
+            padding: 0;
+            margin: 0;
+        }
+
+        #ex1 li {
+            padding: 5px 10px;
+            list-style: none;
+            background-color: red;
+            border: 1px solid #fff;
+            display: inline-block;
+            width: 32%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        #ex2 {
+            background-color: black;
+            padding: 5px 10px;
+        }
+
+        #ex2 ul,
+        #ex2 li {
+            padding: 0;
+            margin: 0;
+        }
+
+        #main {
+            width: 60%;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+        #social {
+            width: 39%;
+            display: inline-block;
+            box-sizing: border-box;
+            text-align: right;
+        }
+        #main li {
+            display: inline-block;
+            padding-right: 10px;
+            padding-left: 10px;
+            border-left: 1px solid #fff;
+        }
+        #main li:first-child {
+            border-left: none;
+            padding-left: 0;
+        }
+        #main li:nth-child(2) {
+            background-color: grey;
+        }
+        #social li {
+            display: inline-block;
+            padding-left: 10px;
+        }
+
+        #ex2 li {
+            list-style: none;
+        }
+
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .grey:link,
+        .grey:visited,
+        .grey:hover,
+        .grey:active {
+            color: grey;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Sample Navigation</h1>
+
+    <ul id="ex1">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+
+    <div id="ex2">
+
+        <ul id="main">
+            <li><a href="#">&#8962;</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Contact Me</a></li>
+        </ul>
+
+        <ul id="social">
+            <li><a href="#" class="grey">&#8450;</a></li>
+            <li><a href="#" class="grey">&#8452;</a></li>
+            <li><a href="#" class="grey">&#8461;</a></li>
+            <li><a href="#" class="grey">&#8468;</a></li>
+        </ul>
+
+
+
+    </div>
+    
+</body>
+</html>
