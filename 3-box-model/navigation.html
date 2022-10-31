@@ -1,117 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Sample Navigation</title>
-
+    <title>Sample Header</title>
     <style>
 
-        #ex1,
-        #ex1 li {
-            padding: 0;
-            margin: 0;
-        }
-
-        #ex1 li {
-            padding: 5px 10px;
-            list-style: none;
-            background-color: red;
-            border: 1px solid #fff;
-            display: inline-block;
-            width: 32%;
-            box-sizing: border-box;
-            text-align: center;
-        }
-
-        #ex2 {
-            background-color: black;
-            padding: 5px 10px;
-        }
-
-        #ex2 ul,
-        #ex2 li {
-            padding: 0;
-            margin: 0;
-        }
-
-        #main {
-            width: 60%;
-            display: inline-block;
+        header {
+            -border: 1px solid grey;
+            width: 800px;
+            margin: auto;
             box-sizing: border-box;
         }
-        #social {
-            width: 39%;
-            display: inline-block;
+        #left {
+            width: 70%;
+            float: left;
             box-sizing: border-box;
+        }
+        #right {
+            width: 30%;
+            float: right;
             text-align: right;
+            box-sizing: border-box;
         }
-        #main li {
+        h1 {
+            clear: both;
+        }
+        #main-menu {
+            margin: 0;
+            padding: 0;
+        }
+        #main-menu li {
             display: inline-block;
-            padding-right: 10px;
-            padding-left: 10px;
-            border-left: 1px solid #fff;
+            margin: 0;
+            padding: 0 5px 0 5px;
+            border-left: 1px solid green;
         }
-        #main li:first-child {
-            border-left: none;
-            padding-left: 0;
-        }
-        #main li:nth-child(2) {
-            background-color: grey;
-        }
-        #social li {
-            display: inline-block;
-            padding-left: 10px;
-        }
-
-        #ex2 li {
-            list-style: none;
+        #main-menu li:first-child {
+            border-left: 0;
         }
 
         a:link,
-        a:visited,
         a:hover,
+        a:visited,
         a:active {
-            color: #fff;
+            color: red;
             text-decoration: none;
         }
-
-        .grey:link,
-        .grey:visited,
-        .grey:hover,
-        .grey:active {
-            color: grey;
-            text-decoration: none;
-        }
-
+        
     </style>
 </head>
 <body>
 
-    <h1>Sample Navigation</h1>
+    <header>
 
-    <ul id="ex1">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Contact Us</a></li>
-    </ul>
+        <nav>
 
-    <div id="ex2">
+            <div id="left">
+                <ul id="main-menu">
+                    <li><a href="#">&starf;</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
 
-        <ul id="main">
-            <li><a href="#">&#8962;</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Contact Me</a></li>
-        </ul>
+            <div id="right">
 
-        <ul id="social">
-            <li><a href="#" class="grey">&#8450;</a></li>
-            <li><a href="#" class="grey">&#8452;</a></li>
-            <li><a href="#" class="grey">&#8461;</a></li>
-            <li><a href="#" class="grey">&#8468;</a></li>
-        </ul>
+                <a href="#">FB</a>
+                <a href="#">TW</a>
+                <a href="#">INS</a>
 
+            </div>
 
+        </nav>
 
-    </div>
+        <h1>Sample Header</h1>
+
+    </header>
     
 </body>
 </html>
