@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+
+    <style>
+
+        #container {
+            display: flex;
+            flex-direction: row;
+            border: 1px solid red;
+            justify-content: space-between;
+        }
+
+        #container > div {
+            border: 1px solid green;
+        }
+
+        #big {
+            flex-grow: 2;
+        }
+        #small {
+            flex-grow: 1;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="container">
+
+        <div id="big">
+            LEFT
+        </div>
+
+        <div id="small">
+            RIGHT
+        </div>
+
+    </div>
+
+    <div id="container">
+
+        <div id="small">
+            LEFT
+        </div>
+
+        <div id="big">
+            RIGHT
+        </div>
+
+    </div>
+    
+</body>
+</html>
