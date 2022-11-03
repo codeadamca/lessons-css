@@ -1,0 +1,173 @@
+<!--
+This code snippet is a deconstruction of a previous verion of:
+http://www.jonathanpatterson.com/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Deconstruction</title>
+
+    <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+    body {
+        font-family: 'Lato', sans-serif;
+    }
+
+    .container-thirds-horizontal {
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        background-color: grey;
+        align-items: stretch;
+        max-width: 800px;
+    }
+
+    .container-thirds-horizontal a:link,
+    .container-thirds-horizontal a:hover,
+    .container-thirds-horizontal a:visited,
+    .container-thirds-horizontal a:active {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .container-thirds-horizontal > .third {
+        flex-grow: 1;
+        flex: 1;
+    }
+
+    .container-thirds-horizontal .third-left {
+        background-color: #FFC41A;
+    }
+    
+    .container-thirds-horizontal .third-center {
+        background-color: #303030;
+    }
+
+    .container-thirds-horizontal .third-right {
+        background-color: #EA4436;
+    }
+
+    .container-thirds-vertical {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        height: 100%;
+    }
+
+    .container-thirds-vertical .third {
+        flex-grow: 1;
+        padding: 20px 10px;
+        box-sizing: border-box;
+    }
+    .container-thirds-vertical .third img {
+        max-width: 100%;
+    }
+    .container-thirds-vertical .third h2 {
+        text-align: center; 
+        vertical-align: middle;
+    }
+    .container-thirds-vertical .third hr {
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 1px solid #fff;
+        margin: 10px 0 5px;
+    }
+    .container-thirds-vertical .third small {
+        font-size: 50%;
+    }
+
+    .container-thirds-vertical .third-top {
+        height: 10%;
+        font-size: 150%;
+    }
+    
+    .container-thirds-vertical .third-middle {
+        height: 65%;
+    }
+
+    .container-thirds-vertical .third-bottom {
+        height: 25%;
+    }
+
+    .container-thirds-vertical .third-bottom  a {
+        display: block;
+        margin-top: auto;
+    }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Deconstruction: jonathan Patterson</h1>
+    
+    <img src="images/jon.png" width="800">
+
+    <hr>
+
+    <div class="container-thirds-horizontal">
+
+        <div class="third third-left">
+            <div class="container-thirds-vertical">
+                <div class="third third-top">
+                    &starf;
+                </div>
+                <div class="third third-middle">
+                    <h2>
+                        Welcome to the portfolio of Adam Thomas, 
+                        Humber College, 
+                        Toronto, Ontario, Canada
+                    </h2>
+                </div>
+                <div class="third third-bottom">
+                    <a href="#">&gt; Home</a>
+                    <hr>
+                    <small>
+                        Ipsum dolor sit amet
+                    </small>
+                </div>
+            </div>
+        </div>
+
+        <div class="third third-center">
+            <div class="container-thirds-vertical">
+                <div class="third third-top">
+                </div>
+                <div class="third third-middle">
+                    <img src="images/arduino.png">
+                </div>
+                <div class="third third-bottom">
+                    <a href="#">&gt; About</a>
+                    <hr>
+                    <small>
+                        Dolor sit amet consectetur adipisicing elit quas
+                    </small>
+                </div>
+            </div>
+        </div>
+
+        <div class="third third-right">
+            <div class="container-thirds-vertical">
+                <div class="third third-top">
+                </div>
+                <div class="third third-middle">
+                    <img src="images/spike.png">
+                </div>
+                <div class="third third-bottom">
+                    <a href="#">&gt; Portfolio</a>
+                    <hr>
+                    <small>
+                        Lorem ipsum dolor
+                    </small>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
