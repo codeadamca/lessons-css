@@ -40,11 +40,65 @@
         }
 
         #account {
-            background-color: #999;
+            background-color: #ccc;
         }
+        #account-container {
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            max-width: 1200px;
+            margin: auto;
+            color: #999;
+        }
+        #account-left {
+            flex-grow: 1;
+        }
+        #account-right {
+            flex-grow: 1;
+            text-align: right;
+        }
+        #account a:link, 
+        #account a:visited, 
+        #account a:active, 
+        #account a:hover {
+            color: #000;
+            text-decoration: none;
+        }
+
         nav {
-            border-bottom: 2px solid #999;
+            border-bottom: 3px solid #ccc;
         }
+        #nav-container {
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            max-width: 1200px;
+            margin: auto;
+            justify-content: space-between;
+        }
+        nav a:link, 
+        nav a:visited, 
+        nav a:active, 
+        nav a:hover {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+        }
+
+        #hero-left {
+
+        }
+        #hero-right {
+
+        }
+
 
     </style>
 
@@ -62,19 +116,20 @@
         </div>
 
         <div id="account">
-            <div id="account-left">
-                <a href="#">SIGN IN</a> |
-                <a href="#">Your Account</a> | 
-                <a href="#">Order Status</a>
-            </div>
-            <div id="account-right">
-                <a href="#">plum and plum PLUS</a>
-                <a href="#">Well Said Podcast</a>
-                <a href="#">Inspired Blog</a>
-                <a href="#">Stores</a>
-                <a href="#">Events</a>
-                <a href="#"></a>
-                <a href="#">Français</a>
+            <div id="account-container">
+                <div id="account-left">
+                    <a href="#">SIGN IN</a> |
+                    <a href="#">Your Account</a> | 
+                    <a href="#">Order Status</a>
+                </div>
+                <div id="account-right">
+                    <a href="#">plum and plum PLUS</a> | 
+                    <a href="#">Well Said Podcast</a> | 
+                    <a href="#">Inspired Blog</a> | 
+                    <a href="#">Stores</a> | 
+                    <a href="#">Events</a> | 
+                    <a href="#">Français</a>
+                </div>
             </div>
         </div>
 
@@ -104,23 +159,35 @@
         </div>
 
         <nav>
-
-            <a href="#">CHRISTMAS</a>
-            <a href="#">NEW</a>
-            <a href="#">BOOKS</a>
-            <a href="#">KIDS BOOKS</a>
-            <a href="#">KIDS &amp; TOYS</a>
-            <a href="#">BABY</a>
-            <a href="#">BEAUTY &amp; WELLNESS</a>
-            <a href="#">HOME</a>
-            <a href="#">FASHION</a>
-            <a href="#">PAPER</a>
-            <a href="#">GIFTS</a>
-            <a href="#">SALE</a>
+            <div id="nav-container">
+                <a href="#">CHRISTMAS</a>
+                <a href="#">NEW</a>
+                <a href="#">BOOKS</a>
+                <a href="#">KIDS BOOKS</a>
+                <a href="#">KIDS &amp; TOYS</a>
+                <a href="#">BABY</a>
+                <a href="#">BEAUTY &amp; WELLNESS</a>
+                <a href="#">HOME</a>
+                <a href="#">FASHION</a>
+                <a href="#">PAPER</a>
+                <a href="#">GIFTS</a>
+                <a href="#">SALE</a>
+            </div>
             
         </nav>
 
     </header>
+
+    <main>
+
+        <div id="hero-left">
+            <h2>Lorem Ipsum Dolor</h2>
+        </div>
+        <div id="nav-right">
+            <img src="images/mindstorms.jpeg">
+        </div>
+
+    </main>
     
 </body>
 </html>
