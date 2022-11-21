@@ -67,6 +67,7 @@
 
         nav {
             border-bottom: 3px solid #ccc;
+            margin-bottom: 20px;
         }
         #nav-container {
             padding: 10px;
@@ -90,13 +91,34 @@
             max-width: 1200px;
             margin: auto;
             display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+                "hero-left hero-right hero-right";
+            column-gap: 20px;
+            row-gap: 20px;
+            place-items: center;
+
         }
 
         #hero-left {
-
+            grid-area: hero-left;
+            width: 100%;
         }
         #hero-right {
+            grid-area: hero-right;
+            
+        }
+        #hero-right img {
+            max-width: 100%;
+        }
 
+        button {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 25px;
+            font-weight: bold;
+            font-size: 150%;
+            border: none;
         }
 
 
@@ -181,9 +203,10 @@
     <main>
 
         <div id="hero-left">
-            <h2>Lorem Ipsum Dolor</h2>
+            <h1>Lorem Ipsum Dolor</h1>
+            <button>Shop All</button>
         </div>
-        <div id="nav-right">
+        <div id="hero-right">
             <img src="images/mindstorms.jpeg">
         </div>
 
