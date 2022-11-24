@@ -1,0 +1,84 @@
+
+/* 
+Orange: FF5622
+Dark Blue: #404551
+Grey: #D9D9D9
+*/
+
+body {
+    background-color: #404551;
+}
+nav,
+header,
+aside,
+main,
+#gallery,
+footer {
+    background-color: #D9D9D9;
+    padding: 10px;
+}
+
+img {
+    border: 5px solid #FF5622;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "nav nav"
+        "header header"
+        "aside main"
+        "gallery gallery"
+        "footer footer";
+    column-gap: 10px;
+    row-gap: 10px;
+    max-width: 1200px;
+    margin: auto;
+}
+@media (max-width:768px) {
+    #container {
+        grid-template-areas: 
+            "nav nav"
+            "header header"
+            "main main"
+            "gallery gallery"
+            "footer footer";
+    }
+    aside {
+        display: none;
+    }
+}
+
+nav {
+    grid-area: nav;
+}
+header {
+    grid-area: header;
+}
+aside {
+    grid-area: aside;
+}
+main {
+    grid-area: main;
+}
+#gallery {
+    grid-area: gallery;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    gap: 10px;
+}
+#gallery div {
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+footer {
+    grid-area: footer;
+}

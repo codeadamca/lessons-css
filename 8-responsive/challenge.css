@@ -1,6 +1,6 @@
 
 /* 
-Orange: FF5622
+Orange: #FF5622
 Dark Blue: #404551
 Grey: #D9D9D9
 */
@@ -16,11 +16,6 @@ main,
 footer {
     background-color: #D9D9D9;
     padding: 10px;
-}
-
-img {
-    border: 5px solid #FF5622;
-    max-width: 100%;
     box-sizing: border-box;
 }
 
@@ -29,38 +24,57 @@ img {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
     grid-template-areas: 
-        "nav nav"
-        "header header"
-        "aside main"
-        "gallery gallery"
-        "footer footer";
+      "nav nav"
+      "header header"
+      "aside main"
+      "gallery gallery"
+      "footer footer";
     column-gap: 10px;
     row-gap: 10px;
     max-width: 1200px;
     margin: auto;
 }
-@media (max-width:768px) {
+@media (max-width: 768px) {
     #container {
         grid-template-areas: 
-            "nav nav"
-            "header header"
-            "main main"
-            "gallery gallery"
-            "footer footer";
+        "nav nav"
+        "header header"
+        "main main"
+        "gallery gallery"
+        "footer footer";
     }
-    aside {
-        display: none;
-    }
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }
 
 nav {
     grid-area: nav;
 }
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        text-align: center;
+    }
+    nav .bar {
+        display: none;
+    }
+}
 header {
     grid-area: header;
+    text-align: center;
 }
+
+
 aside {
     grid-area: aside;
+}
+@media (max-width: 768px) {
+    aside {
+        display: none;
+    }
 }
 main {
     grid-area: main;
@@ -68,16 +82,22 @@ main {
 #gallery {
     grid-area: gallery;
     display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    align-content: space-between;
-    gap: 10px;
+    column-gap: 10px;
 }
-#gallery div {
-    flex-shrink: 1;
-    flex-grow: 1;
+#gallery > div {
+    border: 5px solid #FF5622;
+}
+
+@media (max-width: 768px) {
+    #gallery {
+        padding: 0px;
+        background-color: transparent;
+        flex-direction: column;
+        row-gap: 10px;
+    }
 }
 footer {
     grid-area: footer;
