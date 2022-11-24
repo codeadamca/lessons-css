@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Viewport Meta Tag</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        img {
+            /*max-width: 100%;*/
+            width: 32%;
+        }
+
+        @media all and (max-width:480px) {
+            
+            img {
+                width: 100%;
+                border: 5px solid red;
+                box-sizing: border-box;
+            }
+
+        }
+        
+        main {
+        }
+
+        .restricted {
+            border: 1px solid red;
+            margin: auto;
+            max-width: 800px;
+        }
+        .not-restricted {
+            border: 1px solid green;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <main>
+
+        <div class="restricted">
+            <h1>The Viewport Meta Tag</h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nisi deserunt tempora iure distinctio eius, fuga cupiditate quasi iste, eum dignissimos quos corporis. Quaerat inventore molestiae minima neque dignissimos doloremque!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates minima nisi optio atque, aperiam illum molestias quibusdam adipisci quaerat hic sequi. Minima vitae non nemo. Suscipit architecto reprehenderit ipsa iusto.</p>
+            <ul>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ul>
+
+        </div>
+
+        <div class="not-restricted">
+            <img src="images/camping.jpg">
+            <img src="images/camping.jpg">
+            <img src="images/camping.jpg">
+        </div>
+
+        <div class="restricted">
+            <h2>Subtitle</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nisi deserunt tempora iure distinctio eius, fuga cupiditate quasi iste, eum dignissimos quos corporis. Quaerat inventore molestiae minima neque dignissimos doloremque!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates minima nisi optio atque, aperiam illum molestias quibusdam adipisci quaerat hic sequi. Minima vitae non nemo. Suscipit architecto reprehenderit ipsa iusto.</p>
+            <ul>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ul>
+
+        </div>
+
+    </main>
+    
+</body>
+</html>
