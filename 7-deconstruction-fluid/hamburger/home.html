@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Deconstruction</title>
+
+    <style>
+
+        input {
+            display: none;
+        }
+        input:checked + ul {
+            background-color: red;
+            padding: 10xp;
+            display: block;
+
+            position: relative;
+            animation-name: fade-in;
+            animation-duration: 4s;
+        }
+        input + ul {
+            background-color: green;
+            padding: 10px;
+            display: none;
+        }
+
+        @keyframes fade-in {
+            0%   {top: -200px;}
+            100% {top: 0px;}
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>CSS Only Hamburger Menu</h1>
+
+    <label for="hamburger-checkbox">&#9776;</label>
+
+    <input type="checkbox" id="hamburger-checkbox">
+    
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+
+</body>
+</html>
