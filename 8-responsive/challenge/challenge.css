@@ -34,14 +34,15 @@ footer {
     max-width: 1200px;
     margin: auto;
 }
+
 @media (max-width: 768px) {
     #container {
         grid-template-areas: 
-        "nav nav"
-        "header header"
-        "main main"
-        "gallery gallery"
-        "footer footer";
+            "nav nav"
+            "header header"
+            "main main"
+            "gallery gallery"
+            "footer footer";
     }
 }
 
@@ -53,15 +54,16 @@ img {
 nav {
     grid-area: nav;
 }
+
 @media (max-width: 768px) {
     nav a {
         display: block;
-        text-align: center;
     }
-    nav .bar {
+    .bar {
         display: none;
     }
 }
+
 header {
     grid-area: header;
     text-align: center;
@@ -71,11 +73,13 @@ header {
 aside {
     grid-area: aside;
 }
+
 @media (max-width: 768px) {
     aside {
         display: none;
     }
 }
+
 main {
     grid-area: main;
 }
@@ -93,12 +97,13 @@ main {
 
 @media (max-width: 768px) {
     #gallery {
-        padding: 0px;
-        background-color: transparent;
+        background: transparent;
+        padding: 0;
         flex-direction: column;
         row-gap: 10px;
     }
 }
+
 footer {
     grid-area: footer;
 }
