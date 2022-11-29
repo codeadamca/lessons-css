@@ -7,7 +7,10 @@ A collection of files coded while teaching an introduction to CSS class.
 3. [Box Model](https://github.com/codeadamca/lessons-css/tree/main/3-box-model)
 4. [Positioning](https://github.com/codeadamca/lessons-css/tree/main/4-positioning)
 5. [Flexbox](https://github.com/codeadamca/lessons-css/tree/main/5-flexbox)
-6. [Deconstruction](https://github.com/codeadamca/lessons-css/tree/main/6-deconstruction)
+6. [Grid](https://github.com/codeadamca/lessons-css/tree/main/6-grid)
+7. [Deconstruction (Fluid)](https://github.com/codeadamca/lessons-css/tree/main/6-deconstruction)
+8. [Responsive](https://github.com/codeadamca/lessons-css/tree/main/6-deconstruction)
+9. [Deconstruction (Responsive)](https://github.com/codeadamca/lessons-css/tree/main/6-deconstruction)
 
 ## Requirements:
 
