@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deconstruction</title>
+
+    <style>
+
+
+        nav {
+            background-color: black;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            font-size: 120%;
+        }
+
+        nav input,
+        nav label {
+            display: none;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            padding: 0 10px 0 0;
+            margin: 0;
+            display: inline-block;
+        }
+
+        nav a:link,
+        nav a:visited,
+        nav a:active,
+        nav a:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 0;
+                text-align: center;
+            }
+            nav label {
+                display: block;
+                font-size: 200%;
+            }
+            nav ul li {
+                display: block;
+                padding: 15px;
+                border-top: 1px solid #fff
+            }
+
+            input:checked + ul {
+                display: block;
+            }
+            input + ul {
+                display: none;
+            }   
+        }
+
+        
+
+    </style>
+
+</head>
+<body>
+
+    <nav>
+
+        <label for="hamburger-checkbox">&#9776;</label>
+        <input type="checkbox" id="hamburger-checkbox">
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <h1>CSS Only Hamburger Menu</h1>
+
+</body>
+</html>
