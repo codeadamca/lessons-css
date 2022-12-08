@@ -9,22 +9,13 @@
     <style>
 
         body {
+            font-family: Arial, Helvetica, sans-serif;
             margin: 0;
         }
 
         nav {
             background-color: #000;
             padding: 10px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        nav a:link,
-        nav a:visited,
-        nav a:active,
-        nav a:hover {
-            color: #fff;
-            text-decoration: none;
-            font-size: 120%;
         }
 
         nav ul {
@@ -33,10 +24,22 @@
             list-style: none;
             display: flex;
             justify-content: space-evenly;
-            flex-direction: row;
             flex-wrap: nowrap;
+            flex-direction: row;
         }
 
+        nav a:link,
+        nav a:visited,
+        nav a:active {
+            color: #fff;
+            text-decoration: none;
+            font-size: 120%;
+        }
+        nav a:hover {
+            color: #fff;
+            text-decoration: underline;
+            font-size: 120%;
+        }
 
         @media (max-width: 768px) {
             nav {
@@ -46,12 +49,12 @@
                 flex-direction: column;
             }
             nav li {
+                text-align: center;
                 padding: 10px;
                 border-bottom: 1px solid #fff;
-                text-align: center;
-                font-size: 140%;
             }
         }
+
         
     </style>
 

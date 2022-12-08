@@ -8,17 +8,40 @@
 
     <style>
 
-        #hamburger:link,
-        #hamburger:visited,
-        #hamburger:active,
-        #hamburger:hover {
-            text-decoration: none;
-            columns: #000;
-            font-size: 200%;
-        }
-
         #menu {
             display: none;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        #menu li {
+            background-color: #000;
+            padding: 10px;
+            text-align: center;
+            border-top: 1px solid #fff;;
+        }
+
+        #menu a:link,
+        #menu a:visited,
+        #menu a:active,
+        #menu a:hover {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        #top {
+            text-align: right;
+            background-color: #000;
+            padding: 10px;
+        }
+
+        #top a:link,
+        #top a:visited,
+        #top a:active,
+        #top a:hover {
+            text-decoration: none;
+            color: #fff;
+            font-size: 200%;
         }
 
     </style>
@@ -45,13 +68,13 @@
     <script>
 
         let hamburger = document.getElementById("hamburger");
-        hamburger.addEventListener("click", function(){
+        let menu = document.getElementById("menu");
 
-            let menu = document.getElementById("menu");
+        hamburger.addEventListener("click", function(){
 
             if(menu.style.display == "block")
             {
-                menu.style.display = "none";    
+                menu.style.display = "none";
             }
             else
             {

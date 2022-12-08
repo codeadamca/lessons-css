@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deconstruction</title>
+
+    <style>
+
+        body {
+            margin: 20px;
+            background-color: #2CBAE7;
+            color: #fff;
+        }
+
+        main {
+            border-top: 1px dotted #fff;
+            border-bottom: 1px dotted #fff;
+            padding: 30px 0;
+            max-width: 1000px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 55% 35%;
+            grid-template-rows: auto;
+            grid-template-areas: 
+                "about about-image";
+                column-gap: 10%;
+        }
+
+        #quote {
+            font-size: 200px;
+            height: 100px;
+        }
+        #about {
+            grid-area: about;
+        }
+        #about-image {
+            grid-area: about-image;
+        }
+        #about-image img {
+            max-width: 100%;
+        }
+        #about-text {
+            padding-bottom: 20px;
+            border-bottom: 1px dotted #fff;
+            margin-bottom: 20px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <main>
+
+        <section id="about">
+
+            <div id="quote">&ldquo; </div>
+
+            <div id="about-text">
+                <h2>Thrive's a great assistant and an elegant way to ensure your creative projects run smoothly.</h2>
+            </div>
+
+            <div id="about-credit">
+                PHOTOGRAPHER Gerald Foster
+            </div>
+
+        </section>
+
+        <div id="about-image">
+            <img src="images/project-github.jpeg">
+        </div>
+
+    </main>
+
+    
+</body>
+</html>
