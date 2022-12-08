@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movile vs. Desktop</title>
+
+    <style>
+
+        @media (max-width: 768px) {
+            .hide-mobile {
+                display: none;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .hide-desktop {
+                display: none;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1 class="hide-mobile">Desktop Title</h1>
+
+    <img src="images/arduino.jpg" class="hide-mobile">
+
+    <h1 class="hide-desktop">Mobile Title</h1>
+
+    <img src="images/camping.jpg" class="hide-desktop">
+
+    
+</body>
+</html>

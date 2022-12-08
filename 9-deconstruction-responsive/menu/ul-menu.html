@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Menu</title>
+
+    <style>
+
+        body {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #000;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav a:link,
+        nav a:visited,
+        nav a:active,
+        nav a:hover {
+            color: #fff;
+            text-decoration: none;
+            font-size: 120%;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav li {
+            display: inline-block;
+            padding: 0 10px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 0;
+            }
+            nav li {
+                display: block;
+                font-size: 140%;
+                border-bottom: 1px solid #fff;
+                padding: 10px;
+                text-align: center;
+            }
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <nav>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </nav>
+    
+</body>
+</html>

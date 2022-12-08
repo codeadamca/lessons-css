@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Hamburger Menu</title>
+
+    <style>
+
+        #hamburger:link,
+        #hamburger:visited,
+        #hamburger:active,
+        #hamburger:hover {
+            text-decoration: none;
+            columns: #000;
+            font-size: 200%;
+        }
+
+        #menu {
+            display: none;
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+    <nav>
+
+        <div id="top">
+            <a href="#" id="hamburger">&#9776;</a>
+        </div>
+
+        <ul id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <script>
+
+        let hamburger = document.getElementById("hamburger");
+        hamburger.addEventListener("click", function(){
+
+            let menu = document.getElementById("menu");
+
+            if(menu.style.display == "block")
+            {
+                menu.style.display = "none";    
+            }
+            else
+            {
+                menu.style.display = "block";
+            }
+
+        });
+
+    </script>
+    
+</body>
+</html>
