@@ -1,4 +1,4 @@
-# Introduction to CSS
+# CSS Lesson Files
 
 A collection of files coded while teaching an introduction to CSS class.
 
@@ -12,7 +12,9 @@ A collection of files coded while teaching an introduction to CSS class.
 8. [Responsive](https://github.com/codeadamca/lessons-css/tree/main/6-deconstruction)
 9. [Deconstruction (Responsive)](https://github.com/codeadamca/lessons-css/tree/main/6-deconstruction)
 
-## Requirements:
+***
+
+## Repo Resources
 
 * [CSS on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [CSS on W3Schools](https://www.w3schools.com/w3css/defaulT.asp)
